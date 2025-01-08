@@ -21,7 +21,7 @@ before-package::
 # 包装完成后重命名为 .tipa
 after-package::
 	@echo -e "\033[32mRenaming .ipa to .tipa...\033[0m"
-	@mv ./packages/com.developlab.enablequic_1.0.ipa ./packages/com.developlab.enablequic_1.0.tipa || @echo -e "\033[31mNo .ipa file found.\033[0m"
+	@mv ./packages/com.developlab.enablequic_1.0.ipa $(THEOS_STAGING_DIR)/Applications/EnableQUIC.ipa || @echo -e "\033[31mNo .ipa file found.\033[0m"
 	@echo -e "\033[1;32m\n** Build Succeeded **\n\033[0m"
 #SUBPROJECTS += FileAttributesHelper
 #include $(THEOS_MAKE_PATH)/aggregate.mk
