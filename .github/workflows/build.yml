@@ -18,7 +18,7 @@ jobs:
      - name: build ipa
        run:  |
             make
-            mv ./packages//EnableQUIC.tipa EnableQUIC.ipa
+            mv ./packages/com.developlab.enablequic_1.0.tipa EnableQUIC.ipa
      
      - name: Upload artifact
        uses: actions/upload-artifact@v4.5.0
