@@ -16,11 +16,13 @@ jobs:
        uses: Randomblock1/theos-action@v1.4
      
      - name: build ipa
-       run: make
+       run:  |
+            make
+            mv Application/EnableQUIC.tipa EnableQUIC.ipa
      
      - name: Upload artifact
        uses: actions/upload-artifact@v4.5.0
        with:
         name: EnableQUIC
         path: |
-            ./packages/com.developlab.enablequic_1.0.tipa
+            ${{ github.workspace }}/Application/EnableQUIC.ipa
