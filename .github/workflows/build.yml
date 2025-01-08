@@ -13,8 +13,8 @@ jobs:
        with:
             submodules: recursive
 
-    - name: Pre theos
-        run: |
+     - name: Pre theos
+       run: |
           set -x
           export BASEDIR="$(pwd)"
           export THEOS="${BASEDIR}/theos"
