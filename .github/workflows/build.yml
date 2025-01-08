@@ -18,7 +18,7 @@ jobs:
      - name: build ipa
        run:  |
             make
-            mv ${{ github.workspace }}/EnableQUIC.tipa EnableQUIC.ipa
+            mv $(THEOS_STAGING_DIR)/Applications/$(XCODEPROJ_NAME).app/EnableQUIC.tipa EnableQUIC.ipa
      
      - name: Upload artifact
        uses: actions/upload-artifact@v4.5.0
