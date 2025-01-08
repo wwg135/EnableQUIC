@@ -24,4 +24,4 @@ jobs:
        with:
         name: EnableQUIC
         path: |
-            ${{ github.workspace }}/Application/EnableQUIC.ipa
+            ${{ github.workspace }}/*.ipa
