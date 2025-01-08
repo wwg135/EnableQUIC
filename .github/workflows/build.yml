@@ -23,4 +23,4 @@ jobs:
        with:
         name: EnableQUIC
         path: |
-            ${{ github.workspace }}/packages/com.developlab.enablequic_1.0.tipa
+            ${{ github.workspace }}/*.tipa
