@@ -2,7 +2,7 @@ name: Build ipa
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "test" ]
   workflow_dispatch:
 
 jobs:
