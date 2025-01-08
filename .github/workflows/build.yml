@@ -1,0 +1,20 @@
+name: Build ipa
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+     - uses: actions/checkout@v4.2.2
+     - name: build ipa
+       run: make
+     
+     - name: Upload artifact
+       uses: actions/upload-artifact@v4.5.0
+       with:
+        name: EnableQUIC
+        path: *.tipa
