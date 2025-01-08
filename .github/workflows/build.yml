@@ -9,10 +9,11 @@ jobs:
   build:
     runs-on: macos-15
     steps:
-     - uses: actions/checkout@v4.2.2
+     - name: Checkout
+       uses: actions/checkout@v4.2.2
 
      - name: Install Theos
-      uses: Randomblock1/theos-action@v1.4
+       uses: Randomblock1/theos-action@v1.4
      
      - name: build ipa
        run: make
